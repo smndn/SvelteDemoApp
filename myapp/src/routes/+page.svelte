@@ -7,15 +7,12 @@
     $: console.log('the count is ' + count);
     $: {
         console.log('the count is ' + count);
-        alert('I SAID THE COUNT IS ' + count);
     }
-        $: if (count >= 10) {
-        alert('count is dangerously high!');
-        count = 9;
-    }
+
 	function handleClick() {
 		count += 1;
 	}
+    
 </script>
 
 <button on:click={handleClick}>
@@ -24,3 +21,5 @@
 
 <p>{count} doubled is {doubled}</p>
 <p>{count} tripled is {tripled}</p>
+
+<a href="/numbers">Numbers</a>
